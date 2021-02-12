@@ -14,7 +14,7 @@ fi
 if brew cask --version | grep --quiet "Cask" >/dev/null; then
   true
 else
-  brew tap caskroom/cask
+  brew tap homebrew/cask
 fi
 
 echo "--- Installing brew system dependencies ---"
