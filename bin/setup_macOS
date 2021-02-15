@@ -39,6 +39,9 @@ if conda env list | grep "^lab " >/dev/null; then
   echo "conda env lab is already installed"
 else
   conda create -n lab python=3.7.3 -y
+  conda activate lab
+  pip install future
+  conda deactivate lab
 fi
 
 # install kernel for Atom Hydrogen
