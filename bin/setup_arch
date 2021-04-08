@@ -31,6 +31,7 @@ fi
 # conda env remove -n lab -y
 # conda env export > environment.yml
 echo "--- Updating Conda environment ---"
+conda env update -f environment.yml
 
 source ~/.bashrc
 echo "--- Lab setup complete ---"
